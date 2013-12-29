@@ -30,10 +30,10 @@ if (!isset($_POST['pass'])){
 	<table>
 	<tr>
 		<td> <script type="text/javascript"
-     src="http://www.google.com/recaptcha/api/challenge?k=6LdtncsSAAAAALOWrNbppVGqkmDgm5SBFb8iJuX5">
+     src="http://www.google.com/recaptcha/api/challenge?k=YOUR PUBLIC API KEY HERE">
   </script>
   <noscript>
-     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LdtncsSAAAAALOWrNbppVGqkmDgm5SBFb8iJuX5"
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=YOUR PUBLIC API KEY HERE"
          height="300" width="500" frameborder="0"></iframe><br>
      <textarea name="recaptcha_challenge_field" rows="3" cols="40">
      </textarea>
@@ -59,7 +59,7 @@ else
 {
 
   require_once('recaptchalib.php');
-  $privatekey = "6LdtncsSAAAAABGusZpl3VTQTGyZ_RYGGECdcQBj";
+  $privatekey = "YOUR PRIVATE API KEY HERE";
   $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
                                 $_POST["recaptcha_challenge_field"],
