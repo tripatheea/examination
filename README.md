@@ -9,7 +9,7 @@ Installation
 - Extract everything.
 - Create a database using the SQL dump parikchya.sql
 - Update ./connection.php to the correct host, DB name, user and password.
-- Replace <YOUR PUBLIC API KEY HERE> and <YOUR PRIVATE API KEY HERE> in ./admin/index.php with your own reCAPTCHA public and private key. You can obtain them from http://www.google.com/recaptcha/
+- Replace "YOUR PUBLIC API KEY HERE" and "YOUR PRIVATE API KEY HERE" in ./admin/index.php with your own reCAPTCHA public and private key. You can obtain them from http://www.google.com/recaptcha/
 - Replace http://example.com/ with whatever location/URL you've installed at in all files. A simple way to do so is to open all the PHP files in a text-editor (Geany, Notepad++ off the top of my head) and just do a Replace in session thingy.
 
 Some Important Stuff
